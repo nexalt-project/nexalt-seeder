@@ -1,7 +1,7 @@
-litecoin-seeder
+nexalt-seeder
 ===============
 
-Litecoin-seeder is a crawler for the Litecoin network, which exposes a list
+Nexalt-seeder is a crawler for the Nexalt network, which exposes a list
 of reliable nodes via a built-in DNS server.
 
 Features:
