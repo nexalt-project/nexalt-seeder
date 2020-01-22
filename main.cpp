@@ -400,7 +400,7 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"ns1.nexalt.io","ns2.nexalt.io", ""};
+static const string mainnet_seeds[] = {"nexalt1.itempire.info", ""};
 static const string testnet_seeds[] = {""};
 static const string *seeds = mainnet_seeds;
 
