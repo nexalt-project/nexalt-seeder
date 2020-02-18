@@ -116,7 +116,7 @@ class CNode {
         BeginMessage("verack");
         EndMessage();
       }
-      vSend.SetVersion(min(nVersion, PROTOCOL_VERSION));
+      vSend.SetVersion(min(PROTOCOL_VERSION, PROTOCOL_VERSION));
       if (nVersion < 209) {
         this->vRecv.SetVersion(min(nVersion, PROTOCOL_VERSION));
         GotVersion();
