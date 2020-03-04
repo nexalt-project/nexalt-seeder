@@ -1119,7 +1119,7 @@ std::string CService::ToStringIPPort() const
 {
     printf("string ip== %s\n", ToStringIP());
     printf("string ip== %s\n", ToStringPort());
-    
+
     if (IsIPv4() || IsTor() || IsI2P()) {
         return ToStringIP() + ":" + ToStringPort();
     } else {
