@@ -400,13 +400,13 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"nexalt1.itempire.info", ""};
+static const string mainnet_seeds[] = {"dnsseed.nexalttools.com", "dnsseed2.nexalttools.com" , ""};
 static const string testnet_seeds[] = {""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-    db.Add(CService("kjy2eqzk4zwi5zd3.onion", 96633), true);
+    db.Add(CService("kjy2eqzk4zwi5zd3.onion", 55786), true);
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
