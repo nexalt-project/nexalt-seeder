@@ -414,7 +414,6 @@ extern "C" void* ThreadSeeder(void*) {
       LookupHost(seeds[i].c_str(), ips);
       for (vector<CNetAddr>::iterator it = ips.begin(); it != ips.end(); it++) {
         db.Add(CService(*it, GetDefaultPort()), true);
-          printf("%s: default port \n", GetDefaultPort());
       }
     }
     Sleep(1800000);
