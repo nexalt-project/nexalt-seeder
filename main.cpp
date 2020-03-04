@@ -414,8 +414,8 @@ extern "C" void* ThreadSeeder(void*) {
       LookupHost(seeds[i].c_str(), ips);
       for (vector<CNetAddr>::iterator it = ips.begin(); it != ips.end(); it++) {
         db.Add(CService(*it, GetDefaultPort()), true);
-        cout<<"default port=="<<GetDefaultPort()<<"\n";
-        cout<<"default ips=="<<*it<<"\n";
+          printf("%s: default port \n", GetDefaultPort());
+          printf("%s: default ips \n", it());
       }
     }
     Sleep(1800000);
